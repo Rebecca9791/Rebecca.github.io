@@ -2,5 +2,21 @@
     "entry": "./src/index.js",
     "outputPath": "./",
     "publicPath": "/",
-    "theme": "./src/theme.js"
+    "theme": "./src/theme.js",
+    "extraBabelPlugins": [
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": "css"
+            }
+        ]
+    ],
+    "env": {
+        "development": {
+            "extraBabelPlugins": [
+                "dva-hmr"
+            ]
+        }
+    }
 }
