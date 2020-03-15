@@ -1,2 +1,6 @@
 {
+    "entry": "./src/index.js",
+    "outputPath": "./",
+    "publicPath": "/",
+    "theme": "./src/theme.js"
 }
